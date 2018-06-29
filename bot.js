@@ -359,7 +359,6 @@ client.on('guildMemberAdd', member => {
     })
 
 
-var prefix = '!#';
       client.on('message',function(message) {
   if (message.author.bot) return;
 
@@ -394,7 +393,6 @@ var prefix = '!#';
 
 client.on('message', message => {
 if (message.author.boss) return;
-var prefix = "!#";
 if (!message.content.startsWith(prefix)) return;
 let command = message.content.split(" ")[0];
 command = command.slice(prefix.length);
@@ -462,7 +460,6 @@ var unmuteembeddm = new Discord.RichEmbed()
 
 client.on('message', message => {
     if (message.author.id === client.user.id) return;
-                 var prefix = "!#"
             if (message.content.startsWith(prefix + "ping")) {
         message.channel.sendMessage(':ping_pong: سرعة الأتصال `' + `${client.ping}` + ' ms`');
     }
@@ -513,7 +510,6 @@ client.on('message' , async (message) => {
 
 
       client.on('message', message => {
-  var prefix = '!#';
 
   if (message.content.startsWith(prefix + "id")) {
   if(!message.channel.guild) return message.reply(`هذا الأمر فقط ل السيرفرات :x:`);
@@ -814,7 +810,6 @@ function play(guild, song) {
 }
 
 client.on("message", message => {
-  var prefix = "!#";
 
           var args = message.content.substring(prefix.length).split(" ");
           if (message.content.startsWith(prefix + "clear")) {
@@ -1601,7 +1596,6 @@ client.on('message' , async (message) => {
 
 
 client.on('message' , message => {
-  var prefix = "!#";
   if(message.author.bot) return;
   if(message.content.startsWith(prefix + "bcrole")) {
     let args = message.content.split(" ").slice(1);
@@ -1726,7 +1720,6 @@ message.channel.sendEmbed(cat);
 
 
 client.on('message' , message => {
-    var prefix = "!#";
     let user = message.mentions.users.first()|| client.users.get(message.content.split(' ')[1])
     if(message.content.startsWith(prefix + 'unban')) {
         if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('❌|**\`ADMINISTRATOR\`لا توجد لديك رتبة`**');
