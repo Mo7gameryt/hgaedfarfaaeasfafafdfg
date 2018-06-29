@@ -12,6 +12,7 @@
     "dateformat": "^3.0.3",
     "table": "^4.0.3",
     "array-sort": "^1.0.0",
+    "gif-search": "^2.0.1",
     "discord.js": "^11.3.2",
     "quick.hook": "^1.4.2",
     "express": "^4.16.3",
