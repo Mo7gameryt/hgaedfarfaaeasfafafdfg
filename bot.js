@@ -329,7 +329,7 @@ client.on('guildMemberAdd', member => {
         .setColor('RANDOM')
         .setThumbnail(memberavatar)
         .addField(':running_shirt_with_sash: | name :  ',`${member}`)
-        .addField(':loudspeaker: | نورت السيرفر يا قلبي' , `Welcome to PrinceMC Server ip --->PrinceMC.tk:25574, ${member}`)
+        .addField(':loudspeaker: | نورت السيرفر يا قلبي' , `Welcome to NovaArab Server, ${member}`)
         .addField(':id: | user :', "**[" + `${member.id}` + "]**" )
                 .addField('➡| انت العضو رقم',`${member.guild.memberCount}`)
 
