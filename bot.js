@@ -1770,8 +1770,10 @@ message.author.send("devbot" + `  **
     }
 });
 
+const client = new Client({ disableEveryone: true});
 
-
+const channels = {};
+ 
 
  client.on('voiceStateUpdate',async function(oldmember, member) {
 if(member.user.bot) return;
