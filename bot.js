@@ -1773,9 +1773,7 @@ message.author.send("devbot" + `  **
 
 
 
- 
- 
-client.on('voiceStateUpdate',async function(oldmember, member) {
+ client.on('voiceStateUpdate',async function(oldmember, member) {
 if(member.user.bot) return;
 if(member.voiceChannel === undefined && channels[member.id]) {
 console.log(member.guild.members.filter(m => m.voiceChannelID === channels[member.id].channel).size)
@@ -1826,16 +1824,16 @@ else if(args.includes("all")) {
 message.guild.channels.get(channels[message.author.id].channel).overwritePermissions(message.guild.id, {
 CONNECT: true
 }).then(message.channel.send("**Everyone** can connect to your room now!"));
-} else return message.channel.send(`**Usage: !#unlock [all | @user]**`)
+} else return message.channel.send(`**Usage: !unlock [all | @user]**`)
 }
 }
 if(message.content.startsWith("!#lock")) {
- if(channels[message.author.id] !== undefined) {
+if(channels[message.author.id] !== undefined) {
 if(user) {
 if(!message.guild.channels.get(channels[message.author.id].channel).permissionsFor(user.id).has(`CONNECT`)) return message.channel.send(`**The user already cannot connect to your voice channel**`);
 try {
 if(message.guild.members.get(user.id).voiceChannelID === channels[message.author.id].channel) {
-message.guild.members.get(user.id).setVoiceChannel('466980004962500649'); // المكان الي راح ينحطوله بعد ما يصير لهم lock
+message.guild.members.get(user.id).setVoiceChannel('آيدي الشنل الي يروح له العضو بعد ما يصير له lock'); // المكان الي راح ينحطوله بعد ما يصير لهم lock
 }  
 } catch (error) {
 console.log(error)
@@ -1858,7 +1856,6 @@ if(message.content.length > 7+15) return message.channel.send(`:x: It appears th
 const oldName = await message.guild.channels.get(channels[message.author.id].channel).name
 message.channel.send(`:pencil2: Renamed **\`\`${oldName}\`\`** to **\`\`${args.join(" ").toString()}\`\`** alright?`)
 message.guild.channels.get(channels[message.author.id].channel).setName(args.join(" ").toString());
-channel.delete()
 }
  }
 });
