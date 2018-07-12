@@ -1773,7 +1773,6 @@ message.author.send("devbot" + `  **
 
 
 
-const channels = {};
  
  
 client.on('voiceStateUpdate',async function(oldmember, member) {
