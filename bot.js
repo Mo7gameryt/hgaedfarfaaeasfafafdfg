@@ -1772,7 +1772,7 @@ message.author.send("devbot" + `  **
 
 
 
-const client = new Client({ disableEveryone: true});
+
 const channels = {};
  
  
