@@ -1861,6 +1861,6 @@ message.guild.channels.get(channels[message.author.id].channel).setName(args.joi
 channel.delete()
 }
  }
-
+});
 
 client.login(process.env.BOT_TOKEN);
