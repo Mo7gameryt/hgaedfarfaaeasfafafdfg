@@ -53,7 +53,7 @@ client.on('message', message => {
      if (message.content === "!#help") {
 message.channel.sendMessage("**اوامر البوت**" + `  **
 
-|  %help   أمر البوت الأساسي
+|  !#help   أمر البوت الأساسي
 
 -----------------------------------------------------------------
  للأوامر الإدارية استعمل الأمر ---> !#help admin
