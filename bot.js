@@ -1786,5 +1786,21 @@ if(!ReBeL.voiceChannel) {
 });
 
 
+client.on('guildMemberAdd', member => {
+    const botCount = member.guild.members.filter(m=>m.user.bot).size
+    const memberCount = [member.guild.memberCount] - [botCount]
+    client.channels.get('474511791486009345').setName(`⟫『 ${memberCount} عدد الاعضاء 』⟪`);
+    client.channels.get('474511835694104587').setName(`⟫『 ${botCount} عدد البوتات 』⟪`);
+});
+
+client.on('guildMemberRemove', member => {
+    const botCount = member.guild.members.filter(m=>m.user.bot).size
+    const memberCount = [member.guild.memberCount] - [botCount]
+    client.channels.get('474511791486009345').setName(`⟫『 ${memberCount} عدد الاعضاء 』⟪`);
+    client.channels.get('474511835694104587').setName(`⟫『 ${botCount} عدد البوتات 』⟪`);
+});
+
+
+
 
 client.login(process.env.BOT_TOKEN);
