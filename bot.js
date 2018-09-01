@@ -72,7 +72,7 @@ message.channel.sendMessage("**اوامر البوت**" + `  **
 
 البوت ما زال تحت التطوير
 
-| This Bot Just in NovaArab Server
+| This Bot developed by Mo7gamer
 
 **`);
     }
@@ -109,7 +109,7 @@ message.channel.sendMessage("**اوامر البوت**" + `  **
 
 البوت ما زال تحت التطوير
 
-| This Bot Just in NovaArab Server
+| This Bot developed by Mo7gamer
 
 **`);
     }
@@ -139,7 +139,7 @@ message.channel.sendMessage("**اوامر البوت**" + `  **
 
 البوت ما زال تحت التطوير
 
-| This Bot Just in NovaArab Server
+| This Bot developed by Mo7gamer
 
 **`);
     }
@@ -174,7 +174,7 @@ message.channel.sendMessage("**اوامر البوت**" + `  **
 
 البوت ما زال تحت التطوير
 
-| This Bot Just in NovaArab Server
+| This Bot developed by Mo7gamer
 
 **`);
     }
@@ -226,7 +226,7 @@ message.channel.sendMessage("**اوامر البوت**" + `  **
 
 البوت ما زال تحت التطوير
 
-| This Bot Just in NovaArab Server
+| This Bot developed by Mo7gamer
 
 **`);
     }
@@ -254,7 +254,7 @@ message.channel.sendMessage("**اوامر البوت**" + `  **
 
 البوت ما زال تحت التطوير
 
-| This Bot Just in NovaArab Server
+| This Bot developed by Mo7gamer
 
 **`);
     }
@@ -295,7 +295,7 @@ message.channel.sendMessage("**اوامر البوت**" + `  **
 
 البوت ما زال تحت التطوير
 
-| This Bot Just in NovaArab Server
+| This Bot developed by Mo7gamer
 
 **`);
     }
@@ -329,7 +329,7 @@ client.on('guildMemberAdd', member => {
         .setColor('RANDOM')
         .setThumbnail(memberavatar)
         .addField(':running_shirt_with_sash: | name :  ',`${member}`)
-        .addField(':loudspeaker: | نورت السيرفر يا قلبي' , `Welcome to NovaArab Server, ${member}`)
+        .addField(':loudspeaker: | نورت السيرفر يا قلبي' , `Welcome to The Server, ${member}`)
         .addField(':id: | user :', "**[" + `${member.id}` + "]**" )
                 .addField('➡| انت العضو رقم',`${member.guild.memberCount}`)
 
