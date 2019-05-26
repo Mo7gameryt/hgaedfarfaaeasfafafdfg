@@ -80,6 +80,10 @@ message.channel.sendMessage("**اوامر البوت**" + `  **
 
 client.on('message', message => {
      if (message.content === "!#help admin") {
+   if (!message.member.hasPermissions(['ADMINISTRATOR'])){
+        message.delete()
+    return message.reply(`** !للأسف لا تمتلك الصلاحية لرؤية هذه الأوامر  ! **`)
+    }
 message.channel.sendMessage("**اوامر البوت**" + `  **
 
 | هذه الأوامر مخصصة للأدراة فقط
