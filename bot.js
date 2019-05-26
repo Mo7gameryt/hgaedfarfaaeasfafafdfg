@@ -576,7 +576,7 @@ client.on('message', msg => {
       let Dabooka = msg.mentions.members.first()
       if (!Dabooka) return msg.reply(`اممم .. يجب تحديد شخص`)
       let DabookaEmbed = new Discord.RichEmbed()
-      .setTitle(`رسالة`)
+      .setTitle(`رسالةمن شخص`)
       .setDescription(args.join(" "))
 
       client.users.get(`${Dabooka.id}`).send(DabookaEmbed)
