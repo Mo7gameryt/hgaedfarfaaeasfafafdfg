@@ -4,7 +4,7 @@ const prefix = '!#'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
+client.user.setGame(`Starting`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -32,7 +32,7 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
 
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = ['!#help | !#invitelink','أتمنى أن يعجبكم البوت','By : Mo7gamer','TeamSpeak ip = ASTRO'];
+    var setGame = ['!#help | !#invitelink','Developed By : Mo7gamer','TeamSpeak ip = ASTRO'];
     var i = -1;
     var j = 0;
     setInterval(function (){
