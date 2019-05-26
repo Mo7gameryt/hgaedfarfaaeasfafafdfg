@@ -386,7 +386,7 @@ client.on('guildMemberAdd', member => {
 
 	  client.on('message', message => {
     if(message.content.includes('discord.gg')){
-                                            if(!message.channel.guild) return message.reply('** advertising me on DM ? :thinking:   **');
+                                            if(!message.channel.guild) return message.reply('**   **');
         if (!message.member.hasPermissions(['ADMINISTRATOR'])){
         message.delete()
     return message.reply(`** :angry: !ممنوع النشر هنا :angry: ! **`)
