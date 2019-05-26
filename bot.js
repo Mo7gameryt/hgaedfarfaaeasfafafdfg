@@ -43,7 +43,7 @@ j = 1;
             j = -1;
       }
        i = i+j;
-        client.user.setGame(setGame[i],`http://www.youtube.com/gg`);
+        client.user.setGame(setGame[i],"http://twitch.tv/S-F");
 }, ms);
 
 });
