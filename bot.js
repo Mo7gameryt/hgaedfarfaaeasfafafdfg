@@ -274,8 +274,6 @@ message.channel.sendMessage("**اوامر البوت**" + `  **
 ----------------------------------------------------------------
 !#n3mwla (Ask Anything) - لسؤال البوت سؤال ويجيب بنعم او لا مع صورة متحركة
 -----------------------------------------------------------------
-!#gif (Type Anything) - للبحث عن صورة متحركة
------------------------------------------------------------------
 !#dmj (TypeAnything) - لدمج الكلام الي انت تكتبه مع ايموجي
 -----------------------------------------------------------------
 !#say (Say Anything) - يكرر البوت الكلام الي انت كتبته
@@ -1112,41 +1110,6 @@ let color = '0xffffff'
 
 
 
-const gifSearch = require("gif-search");
-client.on('message' , async (message) => {
-       if(message.content.startsWith(prefix + "gif")) {
-           let args = message.content.split(" ").slice(1);
-if (message.author.bot) return;
-  if (message.channel.type == "chat") return;
-
-    if (!args[0]) return message.channel.send("`"+prefix+"gif <gname>`");
-
-    gifSearch.random(args[0]).then(
-        gifUrl => {
-
-        let randomcolor = ((1 << 24) * Math.random() | 0).toString(16) //Optional
-        var embed = new Discord.RichEmbed()
-            .setColor(`#${randomcolor}`)
-            .setImage(gifUrl)
-        message.author.send(embed);
-    });
-     message.channel.send(`<@${message.author.id}> **check your dm!** :postbox:`);
-
-}
-});
-
-
-const randomizeCase = word => word.split('').map(c => Math.random() > 0.5 ? c.toUpperCase() : c.toLowerCase()).join('');
-
-client.on('message' , async (message) => {
- if (message.content.startsWith(prefix + 'dmj')) {
-  let args = message.content.split(" ").slice(1);
-    if (args.length < 1) return message.channel.send("**I need some text to clapify.** `ium clap <sentence>`")
-    message.channel.send(args.map(randomizeCase).join(`:clap:`));
-}
-
-});
-
 
 
 const secreT = [
@@ -1341,7 +1304,7 @@ client.on('message' , async (message) => {
 
     const embed = new Discord.RichEmbed()
     .setColor("FFFFFF")
-    .setDescription("**Provide a language and some text for bot to translate.**\nUsage: `PREFIXX translate <language> <text>`");
+    .setDescription("**Provide a language and some text for bot to translate.**\nUsage: `!#trjma <language> <text>`");
 
     return message.channel.send(embed);
 
@@ -1349,7 +1312,7 @@ client.on('message' , async (message) => {
 
     if (args[1] === undefined) {
 
-      return message.channel.send('**Please give me something to translate.** `PREFIX translate <language> <text>`');
+      return message.channel.send('**Please give me something to translate.** `!#trjma <language> <text>`');
 
     } else {
 
