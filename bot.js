@@ -495,8 +495,8 @@ client.on('message' , async (message) => {
   client.on('message', msg => {
       if (msg.content.startsWith(`!#report`)) {
          let args = msg.content.split(" ").slice(1);
-        if (!msg.mentions.members.first()) return msg.reply(`يجب عليك منشن شخص`)
-        if (!args[1]) return msg.reply(`امممم .. اكتب تبليغك`)
+        if (!msg.mentions.members.first()) return msg.reply(`!#report ( السبب ) @anyone`)
+        if (!args[1]) return msg.reply(`!#report ( السبب ) @anyone`)
         if (msg.guild.channels.find('name', 'your-reports')) {
           msg.guild.channels.find('name', 'your-reports').send(`
         تبليغ على : ${msg.mentions.members.first()}
@@ -1009,8 +1009,8 @@ client.on('message', msg => {
         if (msg.content.startsWith(`!#warn`)) {
           if(!msg.member.hasPermission("MANAGE_MESSAGES")) return;
            let args = msg.content.split(" ").slice(1);
-          if (!msg.mentions.members.first()) return msg.reply('!#warn ( السبب) @anyone')
-          if (!args[1]) return msg.reply('!#warn ( السبب) @anyone')
+          if (!msg.mentions.members.first()) return msg.reply('!#warn ( السبب ) @anyone')
+          if (!args[1]) return msg.reply('!#warn ( السبب ) @anyone')
           //غير اسم الروم او سوي روم بذا الاسم
           if (msg.guild.channels.find('name', 'warns')) {
             //اذا غيرت فوق غير هنا كمان
