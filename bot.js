@@ -31,7 +31,7 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
 
 
 client.on('ready', function(){
-    var ms = 40000 ;
+    var ms = 10000 ;
     var setGame = ['!#help | !#invitelink','أتمنى أن يعجبكم البوت','By : Mo7gamer','TeamSpeak ip = ASTRO'];
     var i = -1;
     var j = 0;
