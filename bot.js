@@ -32,7 +32,7 @@ client.user.setGame(`Starting`,"http://twitch.tv/S-F")
 
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = ['!#help | !#invitelink','Developed By : Mo7gamer','TeamSpeak ip = ASTRO'];
+    var setGame = ['!#help | !#invitelink','Made By : Mo7gamer','TeamSpeak ip = ASTRO'];
     var i = -1;
     var j = 0;
     setInterval(function (){
