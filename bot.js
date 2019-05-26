@@ -497,8 +497,8 @@ client.on('message' , async (message) => {
          let args = msg.content.split(" ").slice(1);
         if (!msg.mentions.members.first()) return msg.reply(`يجب عليك منشن شخص`)
         if (!args[1]) return msg.reply(`امممم .. اكتب تبليغك`)
-        if (msg.guild.channels.find('name', 'your-report')) {
-          msg.guild.channels.find('name', 'your-report').send(`
+        if (msg.guild.channels.find('name', 'your-reports')) {
+          msg.guild.channels.find('name', 'your-reports').send(`
         تبليغ على : ${msg.mentions.members.first()}
         بلغ عليه من قبل : ${msg.member}
         في روم : ${msg.channel.name}
