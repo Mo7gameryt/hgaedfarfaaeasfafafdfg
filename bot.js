@@ -1603,9 +1603,9 @@ message.author.send("devbot" + `  **
 });
 
   client.on('voiceStateUpdate', (codes, ReBeL) => {
-if(ReBeL.voiceChannelID !== "466980004962500649") return console.log("أيرور . ");
+if(ReBeL.voiceChannelID !== "582208426034200576") return console.log("أيرور . ");
 ReBeL.guild.createChannel(ReBeL.user.username , 'voice').then((rebeeel) =>{
-    rebeeel.setParent("466979766277373952");
+    rebeeel.setParent("582208322443411467");
 ReBeL.guild.members.get(ReBeL.id).setVoiceChannel(rebeeel.id).then((codess) =>{
   console.log("تــــــم .");
   let scan = setInterval(()=>{
