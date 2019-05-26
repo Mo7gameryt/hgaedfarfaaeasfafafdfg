@@ -1009,8 +1009,8 @@ client.on('message', msg => {
         if (msg.content.startsWith(`!#warn`)) {
           if(!msg.member.hasPermission("MANAGE_MESSAGES")) return;
            let args = msg.content.split(" ").slice(1);
-          if (!msg.mentions.members.first()) return msg.reply('منشن الشخص المحدد')
-          if (!args[1]) return msg.reply('اكتب السبب')
+          if (!msg.mentions.members.first()) return msg.reply('!#warn ( السبب) @anyone')
+          if (!args[1]) return msg.reply('!#warn ( السبب) @anyone')
           //غير اسم الروم او سوي روم بذا الاسم
           if (msg.guild.channels.find('name', 'warns')) {
             //اذا غيرت فوق غير هنا كمان
