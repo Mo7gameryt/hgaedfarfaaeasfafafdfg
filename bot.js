@@ -1671,7 +1671,8 @@ client.on('guildMemberRemove', member => {
 
 
 
-
+var Canvas = require('canvas');
+    var jimp = require('jimp');
 
 
 
