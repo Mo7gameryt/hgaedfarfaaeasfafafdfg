@@ -7,6 +7,7 @@ const prefix = '!#'
 
 
 
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(`Starting...`,"http://twitch.tv/S-F")
